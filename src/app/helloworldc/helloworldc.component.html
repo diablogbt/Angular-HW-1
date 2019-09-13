@@ -1,0 +1,13 @@
+<p>helloworldc works!</p>
+<label>
+  <input [(ngModel)]="hero.noteword" placeholder="noteword" />
+</label>
+<div>
+  <ul class="heroList">
+    <li *ngFor="let hero1 of heroList">
+      <span class="badge">{{hero1.id}}</span> {{hero1.noteword}}
+    </li>
+  </ul>
+</div>
+<p>u get {{hero.noteword}} </p>
+

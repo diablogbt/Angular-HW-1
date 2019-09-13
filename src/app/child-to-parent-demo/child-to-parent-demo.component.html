@@ -1,0 +1,9 @@
+<h2>parent-side</h2>
+<div>
+  <button (click)="child.increment()">increment</button>
+  <input type="number"  style="width: 40px" [(ngModel)]="child.step"/>
+  <button (click)="child.decrement()">decrement</button>
+
+  <p>step is {{child.step}} now</p>
+  <child #child ></child>
+</div>
